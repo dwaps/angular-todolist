@@ -1,0 +1,7 @@
+li i {
+  cursor: pointer;
+}
+
+.todo-done {
+  text-decoration: line-through solid red;
+}

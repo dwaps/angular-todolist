@@ -1,0 +1,12 @@
+<!-- https://getbootstrap.com/docs/4.3/components/list-group/ -->
+<!-- https://angular.io/api/common/UpperCasePipe -->
+
+<h1 class="text-center mb-5">Liste des livres</h1>
+
+<div class="list-group list-group-flush">
+  <a class="list-group-item list-group-item-action"
+    (click)="selectBook(i)"
+    *ngFor="let book of books; let i = index">
+    {{ book.title | uppercase }}
+  </a>
+</div>
